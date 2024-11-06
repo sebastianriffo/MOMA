@@ -122,7 +122,7 @@ if (event.target.tagName.toLowerCase() === 'input') {
 			folder = "sreyes/dataviz";
 			fullFilename = variableName+"/"+variableName+"_"+filename+"_annual_global_mean.nc";
 		} else {
-			root = (window.location.origin === "https://sebastianriffo.github.io/") ? "https://raw.githubusercontent.com/sebastianriffo/MOMA/master":window.location.origin;
+			root = (window.location.origin === "https://sebastianriffo.github.io") ? "https://raw.githubusercontent.com/sebastianriffo/MOMA/master":window.location.origin;
 			folder = ["data", event.target.className, experience, variableName, filename, plot].join("/");				
 			fullFilename = [variableName, filename, experience, timeRes, spatialExt, "mean.nc"].join("_");
 		}
