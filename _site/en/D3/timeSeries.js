@@ -110,8 +110,6 @@ export function timeSeries(data, colorPalette, xLim, yLim){
 		let svg = d3.selectAll("svg > g")
 
 		// add units, title, etc
-		console.log(d3.select(".yLabel").empty())
-		
 		if (d3.select(".yLabel").empty()){
 			svg.append('g')
 				.attr("class", "yLabel")		

@@ -117,14 +117,14 @@ if (event.target.tagName.toLowerCase() === 'input') {
 		// should realize when a file is unavailable (due to poor filtering)		
 		let root, folder, fullFilename = null;
 		
-		if (storage != "thredds") {
-			root = window.location.origin; 
-			folder = ["data", event.target.className, experience, variableName, filename, plot].join("/");				
-			fullFilename = [variableName, filename, experience, timeRes, spatialExt, "mean.nc"].join("_");
-		} else {
+		if (window.location.origin === "https://thredds-su.ipsl.fr"){
 			root = "https://thredds-su.ipsl.fr/thredds/fileServer/ipsl_thredds";
 			folder = "sreyes/dataviz";
 			fullFilename = variableName+"/"+variableName+"_"+filename+"_annual_global_mean.nc";
+		} else {
+			root = (window.location.origin === "https://sebastianriffo.github.io/") ? "https://raw.githubusercontent.com/sebastianriffo/MOMA/master":window.location.origin;
+			folder = ["data", event.target.className, experience, variableName, filename, plot].join("/");				
+			fullFilename = [variableName, filename, experience, timeRes, spatialExt, "mean.nc"].join("_");
 		}
 		
 		let path = root +"/"+ folder +"/"+ fullFilename;
