@@ -126,6 +126,8 @@ if (event.target.tagName.toLowerCase() === 'input') {
 			folder = ["data", event.target.className, experience, variableName, filename, plot].join("/");				
 			fullFilename = [variableName, filename, experience, timeRes, spatialExt, "mean.nc"].join("_");
 		}
+		console.log(window.location.origin)
+		console.log(window.location.origin === "https://sebastianriffo.github.io")
 		
 		let path = root +"/"+ folder +"/"+ fullFilename;
 		
