@@ -1,0 +1,79 @@
+/*
+.container {
+	margin-top: 0px; 
+	padding: 10px 0px 0px 0px;
+}
+*/
+
+#LHSP {
+	min-height:500px;
+	position: sticky; 
+	top: 63px; 
+	padding-top: inherit;
+}
+
+.panel {
+	padding:15px;
+
+	overflow-y: auto;
+
+	background-color: #eaecef;
+	border: 1px solid #ccc;
+	border-radius: 0 0 6px 6px;
+}
+
+.tab {
+	overflow: hidden;
+
+}
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: 1px solid #ccc;
+	outline: none;
+	cursor: pointer;
+	padding: 12px 12px;
+	transition: 0.3s;
+	font-size:16px;
+}
+.tab button:hover {
+	background-color: #ddd;
+}
+
+select {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #ffffff;
+}
+
+
+/* .specs { */
+.ui-selectmenu-button {
+	height: 35px;
+	width: 100% !important;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: .4em 3px;
+	background: #fff;
+	font-size: 0.9em;
+}
+
+.ui-menu > li:nth-child(even) {
+	background-color: transparent !important;
+}
+.ui-menu > li:nth-child(odd) {
+	background-color: #f6f8fa !important;
+}
+.ui-menu-item-wrapper {
+	font-size: 0.9em;
+}
+
+#startDate, #endDate {
+	height: 35px;
+	width: 49%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding-left:0px; padding-right:0px;
+	background: #fff;
+	/*font-size: 0.9em;*/
+}

@@ -1,0 +1,120 @@
+div.dtsp-verticalContainer{
+    display: flex;
+
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;    
+}
+ 
+div.dtsp-verticalContainer div.dtsp-verticalPanes,
+div.dtsp-verticalContainer{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+ 
+div.dtsp-verticalContainer div.dtsp-verticalPanes{
+    flex-grow: 0; /*1*/
+    flex-shrink: 0;
+    flex-basis: 25%;
+}
+ 
+div.dtsp-verticalPanes {
+	/*margin-top: 10px;*/
+	padding-top: 10px;
+    	margin-right: 20px;
+}
+ 
+div.dtsp-title {
+    margin-right: 0px !important;
+    margin-top: 13px !important;
+}
+ 
+input.dtsp-search {
+    min-width: 0px !important;
+    ./* padding-left: 0px !important; */
+    margin: 0px !important;
+}
+ 
+div.dtsp-verticalContainer div.dtsp-verticalPanes div.dtsp-searchPanes{
+    flex-direction: column;
+    flex-basis: 0px;
+}
+ 
+div.dtsp-verticalContainer div.dtsp-verticalPanes div.dtsp-searchPanes div.dtsp-searchPane{
+    flex-basis: 0px;
+}
+ 
+div.dtsp-verticalContainer{ 
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 60%;
+}
+ 
+div.dtsp-panesContainer {
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 1em !important;
+	overflow-y: auto !important;
+	height: inherit !important;
+}
+
+/* https://stackoverflow.com/questions/2717480/css-selector-for-first-element-with-class */
+#example_wrapper > div.dt-layout-row {
+	position: sticky; 
+	top: 63px;
+	z-index: 9999;	
+	padding-bottom: 0.5em !important;
+	padding-top: inherit !important;
+	margin: 0 !important;
+	background: #fff !important;
+}
+#example_wrapper > div.dt-layout-row ~ div.dt-layout-row {
+	position: revert;
+	top: 0px;
+	z-index: 9998; 
+	padding: 0;
+	margin: 0.5em 0 0 0 !important;
+	background: None;
+}
+
+#example_wrapper > div.dt-layout-row div.dt-layout-cell div.dt-search{
+	margin-left: -3px;
+}
+
+
+div.dtsp-titleRow {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+ 
+div.dtsp-titleRow div.dtsp-title {
+  margin-top: 0 !important;
+  padding-top: 0;
+}
+ 
+html.dark div.dtsp-panesContainer {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.dtsp-topRow {
+	background: #fff !important;
+}
+
+.ui-widget-header {
+	font-weight: normal !important;
+	background: #eaecef !important;
+}
+
+div.dt-scroll-body {
+	height: auto !important;
+}
+
+div.dt-container {
+	border: none !important;
+}
+.dataTable{
+	display: table !important;
+}
